@@ -1,0 +1,5 @@
+# Global owners
+* @TruthChat/owners
+
+# Backend Source Code
+/src/               @TruthChat/platform-eng
