@@ -1,0 +1,144 @@
+name: AI Hallucination / Incorrect Output Report
+description: Report instances where the AI system produces incorrect, misleading, or hallucinated outputs
+title: "[Hallucination] "
+labels: ["bug", "hallucination", "ai-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ Privacy and Security Notice
+        
+        **IMPORTANT**: Please ensure you have removed all sensitive, confidential, or personally identifiable information (PII) from your report before submitting.
+        
+        - Do NOT include real names, email addresses, phone numbers, or other personal data
+        - Do NOT include confidential business information, API keys, or credentials
+        - Do NOT include proprietary or copyrighted content
+        - Sanitize any example inputs/outputs to remove sensitive information
+        
+        Reports containing sensitive data may be closed without review.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Issue
+      description: Provide a clear and concise description of the hallucination or incorrect output
+      placeholder: "The system incorrectly stated that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: What should the system have produced or stated?
+      placeholder: "The system should have..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual Behavior
+      description: What did the system actually produce or state?
+      placeholder: "The system incorrectly stated..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: input_context
+    attributes:
+      label: Input Context (Sanitized)
+      description: Provide the input or query that led to this issue. **REMOVE ALL SENSITIVE INFORMATION**
+      placeholder: "User query: [sanitized example]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: output_observed
+    attributes:
+      label: Output Observed
+      description: The specific incorrect output or hallucination observed. **REMOVE ALL SENSITIVE INFORMATION**
+      placeholder: "System output: [sanitized example]"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How severe is the impact of this hallucination?
+      options:
+        - Low - Minor inaccuracy, low impact
+        - Medium - Significant inaccuracy, moderate impact
+        - High - Critical inaccuracy, high impact
+        - Critical - Dangerous misinformation, safety concern
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      description: Can you consistently reproduce this issue?
+      options:
+        - Always - Happens every time with the same input
+        - Often - Happens frequently but not always
+        - Sometimes - Happens occasionally
+        - Rarely - Has happened once or twice
+        - Unknown - Haven't tried to reproduce
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: If reproducible, provide step-by-step instructions (sanitized)
+      placeholder: |
+        1. Input query: [sanitized]
+        2. System response: [sanitized]
+        3. Issue observed: [description]
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (High-Level)
+      description: Basic information about your environment (no sensitive details)
+      placeholder: |
+        - Platform: [e.g., Web, API, CLI]
+        - Version: [if known]
+        - Date/Time: [approximate]
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any other information that might be helpful (screenshots, related issues, etc.)
+      placeholder: "Additional details, links, or context..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy_acknowledgment
+    attributes:
+      label: Privacy Acknowledgment
+      description: Please confirm you have reviewed your submission for sensitive information
+      options:
+        - label: I have removed all sensitive, confidential, and personally identifiable information from this report
+          required: true
+        - label: I understand that reports containing sensitive data may be closed without review
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank You
+        
+        Thank you for reporting this issue. Your feedback helps us improve the accuracy and reliability of our AI systems.
+        
+        We will review your report and may follow up with questions or requests for additional information.
+
