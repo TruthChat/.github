@@ -108,10 +108,10 @@ We recommend subscribing to repository notifications to receive security update 
 ## Contact
 
 For security-related inquiries:
-- **Email**: security@truthchat.in
+- **Email**: hello@truthchat.in
 - **Response Time**: We aim to respond within 48 hours
 
-For general inquiries, please use: contact@truthchat.in
+For general inquiries, please use: hello@truthchat.in
 
 ---
 
