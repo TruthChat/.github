@@ -183,7 +183,7 @@ Unacceptable behavior includes harassment, trolling, and personal attacks.
 
 - **GitHub Discussions**: Use repository discussions for questions
 - **Issues**: Open an issue for bugs or feature requests
-- **Email**: contact@truthchat.in for general inquiries
+- **Email**: hello@truthchat.in for general inquiries
 
 ## Recognition
 
