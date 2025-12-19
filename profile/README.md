@@ -194,8 +194,8 @@ Found a bug or have a suggestion? Open an issue in the relevant repository. We r
 - Follow our blog and announcements
 
 ### **Contact**
-For general inquiries: [contact@truthchat.in](mailto:contact@truthchat.in)  
-For security concerns: [security@truthchat.in](mailto:security@truthchat.in)
+For general inquiries and security concerns: [hello@truthchat.in](mailto:hello@truthchat.in)  
+
 
 ---
 
@@ -229,8 +229,8 @@ Building the operating system for trustworthy AI
 ---
 
 **Website**: [truthchat.in](https://truthchat.in)  
-**Email**: [contact@truthchat.in](mailto:contact@truthchat.in)  
-**Security**: [security@truthchat.in](mailto:security@truthchat.in)
+**Email & Security**: [hello@truthchat.in](mailto:hello@truthchat.in)  
+
 
 ---
 
