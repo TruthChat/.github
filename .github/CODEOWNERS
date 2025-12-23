@@ -1,66 +1,89 @@
-# CODEOWNERS File
-# This file defines code ownership for the TruthChat organization
-# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# ======================================================
+# TruthChat CODEOWNERS
+# ======================================================
+# This file defines code ownership for the TruthChat organization.
+# It is used to automatically request reviews and enforce ownership.
+#
+# Location (recommended):
+#   .github/CODEOWNERS
+#
+# Docs:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# ======================================================
 
-# Global default: Core team owns everything
-* @truthchat/core-team
 
-# Documentation
-/docs/ @truthchat/core-team @truthchat/docs-team
-*.md @truthchat/core-team @truthchat/docs-team
-README.md @truthchat/core-team @truthchat/docs-team
-CONTRIBUTING.md @truthchat/core-team @truthchat/docs-team
-SECURITY.md @truthchat/core-team
+# ------------------------------------------------------
+# DEFAULT OWNERSHIP
+# ------------------------------------------------------
+# Fallback: Core team owns everything
+* @TruthChat/core
 
-# Configuration files
-/.github/ @truthchat/core-team
-/.github/workflows/ @truthchat/core-team @truthchat/devops-team
-/.github/ISSUE_TEMPLATE/ @truthchat/core-team
-/.github/PULL_REQUEST_TEMPLATE.md @truthchat/core-team
 
-# Root-level config files
-/.gitignore @truthchat/core-team
-/LICENSE @truthchat/core-team
-/pyproject.toml @truthchat/core-team
-/requirements*.txt @truthchat/core-team
-/setup.py @truthchat/core-team
-/setup.cfg @truthchat/core-team
+# ------------------------------------------------------
+# SECURITY & GOVERNANCE (Highest Priority)
+# ------------------------------------------------------
+/SECURITY.md        @TruthChat/core @TruthChat/security
+/CODEOWNERS         @TruthChat/core
+/.github/           @TruthChat/core
+/.github/workflows/ @TruthChat/core @TruthChat/devops
 
-# CI/CD and automation
-/.github/workflows/ @truthchat/core-team @truthchat/devops-team
-/docker-compose.yml @truthchat/core-team @truthchat/devops-team
-/Dockerfile @truthchat/core-team @truthchat/devops-team
 
-# Security and compliance
-/SECURITY.md @truthchat/core-team
-/CODEOWNERS @truthchat/core-team
+# ------------------------------------------------------
+# CI / CD / INFRASTRUCTURE
+# ------------------------------------------------------
+/Dockerfile              @TruthChat/core @TruthChat/devops
+/docker-compose.yml      @TruthChat/core @TruthChat/devops
+/infra/                  @TruthChat/core @TruthChat/devops
 
-# Documentation directories
-/docs/ @truthchat/core-team @truthchat/docs-team
-/developement_notes/ @truthchat/core-team
 
-# Source code (adjust paths based on your repository structure)
-/src/ @truthchat/core-team @truthchat/engineering-team
-/models/ @truthchat/core-team @truthchat/engineering-team
-/backend/ @truthchat/core-team @truthchat/engineering-team
-/frontend/ @truthchat/core-team @truthchat/engineering-team
+# ------------------------------------------------------
+# DOCUMENTATION
+# ------------------------------------------------------
+/docs/              @TruthChat/core @TruthChat/docs
+*.md                @TruthChat/core @TruthChat/docs
+README.md           @TruthChat/core @TruthChat/docs
+CONTRIBUTING.md     @TruthChat/core @TruthChat/docs
+/development_notes/ @TruthChat/core @TruthChat/docs
 
-# Tests
-/tests/ @truthchat/core-team @truthchat/engineering-team
-/test_*.py @truthchat/core-team @truthchat/engineering-team
-*_test.py @truthchat/core-team @truthchat/engineering-team
 
-# Scripts
-/scripts/ @truthchat/core-team @truthchat/engineering-team
+# ------------------------------------------------------
+# APPLICATION SOURCE CODE
+# ------------------------------------------------------
+/src/       @TruthChat/core @TruthChat/platform-eng
+/backend/   @TruthChat/core @TruthChat/platform-eng
+/frontend/  @TruthChat/core @TruthChat/platform-eng
+/models/    @TruthChat/core @TruthChat/platform-eng
 
-# Configuration directories
-/configs/ @truthchat/core-team @truthchat/engineering-team
-/config/ @truthchat/core-team @truthchat/engineering-team
 
-# Data and artifacts (if needed)
-/data/ @truthchat/core-team
-/artifacts/ @truthchat/core-team
+# ------------------------------------------------------
+# TESTS
+# ------------------------------------------------------
+/tests/        @TruthChat/core @TruthChat/platform-eng
+/test_*.py    @TruthChat/core @TruthChat/platform-eng
+*_test.py     @TruthChat/core @TruthChat/platform-eng
 
-# Note: Team names are placeholders
-# Replace @truthchat/core-team, @truthchat/engineering-team, etc.
-# with actual GitHub team names or usernames in your organization
+
+# ------------------------------------------------------
+# SCRIPTS & CONFIGURATION
+# ------------------------------------------------------
+/scripts/  @TruthChat/core @TruthChat/platform-eng
+/config/   @TruthChat/core @TruthChat/platform-eng
+/configs/  @TruthChat/core @TruthChat/platform-eng
+
+
+# ------------------------------------------------------
+# ROOT-LEVEL PROJECT FILES
+# ------------------------------------------------------
+/.gitignore           @TruthChat/core
+/LICENSE              @TruthChat/core
+/pyproject.toml       @TruthChat/core
+/requirements*.txt    @TruthChat/core
+/setup.py             @TruthChat/core
+/setup.cfg            @TruthChat/core
+
+
+# ------------------------------------------------------
+# DATA & ARTIFACTS
+# ------------------------------------------------------
+/data/       @TruthChat/core
+/artifacts/  @TruthChat/core
