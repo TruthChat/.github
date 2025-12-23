@@ -1,84 +1,17 @@
 # ======================================================
-# TruthChat CODEOWNERS
+# TruthChat .github Repository CODEOWNERS
 # ======================================================
-# NOTE:
-# - CODEOWNERS requires TEAM SLUGS (lowercase)
-# - Organization slug: truthchat
-# - Team slugs: core, platform-eng, devops, docs, security
+# This repository manages organization-wide GitHub settings:
+# - Issue templates
+# - Pull request templates
+# - GitHub Actions workflows
+#
+# BEST PRACTICE:
+# Only organization owners / core maintainers should modify this repo.
 # ======================================================
 
 
 # ------------------------------------------------------
-# DEFAULT OWNERSHIP
+# DEFAULT OWNERS
 # ------------------------------------------------------
 * @truthchat/core
-
-
-# ------------------------------------------------------
-# SECURITY & GOVERNANCE
-# ------------------------------------------------------
-/SECURITY.md        @truthchat/core @truthchat/security
-/CODEOWNERS         @truthchat/core
-/.github/           @truthchat/core
-/.github/workflows/ @truthchat/core @truthchat/devops
-
-
-# ------------------------------------------------------
-# CI / CD / INFRASTRUCTURE
-# ------------------------------------------------------
-/Dockerfile           @truthchat/core @truthchat/devops
-/docker-compose.yml   @truthchat/core @truthchat/devops
-/infra/               @truthchat/core @truthchat/devops
-
-
-# ------------------------------------------------------
-# DOCUMENTATION
-# ------------------------------------------------------
-/docs/               @truthchat/core @truthchat/docs
-*.md                 @truthchat/core @truthchat/docs
-README.md            @truthchat/core @truthchat/docs
-CONTRIBUTING.md      @truthchat/core @truthchat/docs
-/development_notes/  @truthchat/core @truthchat/docs
-
-
-# ------------------------------------------------------
-# APPLICATION SOURCE CODE
-# ------------------------------------------------------
-/src/        @truthchat/core @truthchat/platform-eng
-/backend/    @truthchat/core @truthchat/platform-eng
-/frontend/   @truthchat/core @truthchat/platform-eng
-/models/     @truthchat/core @truthchat/platform-eng
-
-
-# ------------------------------------------------------
-# TESTS
-# ------------------------------------------------------
-/tests/      @truthchat/core @truthchat/platform-eng
-/test_*.py   @truthchat/core @truthchat/platform-eng
-*_test.py    @truthchat/core @truthchat/platform-eng
-
-
-# ------------------------------------------------------
-# SCRIPTS & CONFIGURATION
-# ------------------------------------------------------
-/scripts/    @truthchat/core @truthchat/platform-eng
-/config/     @truthchat/core @truthchat/platform-eng
-/configs/    @truthchat/core @truthchat/platform-eng
-
-
-# ------------------------------------------------------
-# ROOT-LEVEL PROJECT FILES
-# ------------------------------------------------------
-/.gitignore         @truthchat/core
-/LICENSE            @truthchat/core
-/pyproject.toml     @truthchat/core
-/requirements*.txt  @truthchat/core
-/setup.py           @truthchat/core
-/setup.cfg          @truthchat/core
-
-
-# ------------------------------------------------------
-# DATA & ARTIFACTS
-# ------------------------------------------------------
-/data/       @truthchat/core
-/artifacts/  @truthchat/core
